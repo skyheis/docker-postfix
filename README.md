@@ -15,23 +15,6 @@ This image is available for the following architectures:
 
 _If you want to follow the development of this project check out [my blog](https://www.juanbaptiste.tech/category/postfx)._
 
-### Available image tags
-
-We use semantic versioning for this image. For all supported architectures there are the following versioned tags:
-
-* Major (1)
-* Minor (1.0)
-* Patch (1.0.0)
-
-Additionally the amd64 architecture has the following tags:
-
-* _latest_
-* _alpine_
-
-*_NOTES_*:
-  * The _alpine_ tag has been switched to use the master branch, but it's irrelevant as it is the same as _latest_.
-  * Old CentOS 7 based image is avaiable on the _centos_base_image branch_, but it is not being developed any more.
-
 ### Build instructions
 
 Clone this repo and then:
