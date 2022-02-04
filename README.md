@@ -1,7 +1,4 @@
 # docker-postfix
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/juanluisbaptiste/postfix?style=flat-square)](https://hub.docker.com/r/juanluisbaptiste/postfix/builds/)
-[![Docker Stars](https://img.shields.io/docker/stars/juanluisbaptiste/postfix.svg?style=flat-square)](https://hub.docker.com/r/juanluisbaptiste/postfix/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/juanluisbaptiste/postfix.svg?style=flat-square)](https://hub.docker.com/r/juanluisbaptiste/postfix/)
 
 Simple Postfix SMTP TLS relay [docker](http://www.docker.com) alpine based image with no local authentication enabled (to be run in a secure LAN).
 
@@ -13,7 +10,6 @@ This image is available for the following architectures:
 * armv7
 * arm64
 
-_If you want to follow the development of this project check out [my blog](https://www.juanbaptiste.tech/category/postfx)._
 
 ### Build instructions
 
@@ -22,13 +18,13 @@ Clone this repo and then:
     cd docker-Postfix
     sudo docker build -t juanluisbaptiste/postfix .
 
-Or you can use the provided [docker-compose](https://github.com/juanluisbaptiste/docker-postfix/blob/master/docker-compose.override.yml) files:
+Or you can use the provided [docker-compose](https://github.com/skyheis/docker-postfix/blob/master/docker-compose.override.yml) files:
 
     sudo docker-compose build
 
-For more information on using multiple compose files [see here](https://docs.docker.com/compose/production/). You can also find a prebuilt docker image from [Docker Hub](https://registry.hub.docker.com/u/juanluisbaptiste/postfix/), which can be pulled with this command:
+For more information on using multiple compose files [see here](https://docs.docker.com/compose/production/). You can also find a prebuilt docker image from [Docker Hub](https://registry.hub.docker.com/u/skyheis/postfix/), which can be pulled with this command:
 
-    sudo docker pull juanluisbaptiste/postfix:latest
+    sudo docker pull skyheis/postfix:latest
 
 ### How to run it
 
@@ -80,7 +76,7 @@ If you are going to use this container from other docker containers then it's be
            -e SERVER_HOSTNAME=helpdesk.mycompany.com \           
            juanluisbaptiste/postfix
 
-Or if you can start the service using the provided [docker-compose](https://github.com/juanluisbaptiste/docker-postfix/blob/master/docker-compose.yml) file for production use:
+Or if you can start the service using the provided [docker-compose](https://github.com/skyheis/docker-postfix/blob/master/docker-compose.yml) file for production use:
 
     sudo docker-compose up -d
 
